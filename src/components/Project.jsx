@@ -20,7 +20,7 @@ const projects = [
     id: 4,
     name: "Portfolio",
     tech: "React",
-    link: "#",
+    link: "https://1eyedeagle.github.io/MyPortfolio/",
   },
 ];
 
