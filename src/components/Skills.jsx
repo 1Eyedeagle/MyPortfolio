@@ -13,9 +13,10 @@ const Skills = () => {
           <div className="grid-item">HTML</div>
           <div className="grid-item">CSS</div>
           <div className="grid-item">Bootstrap</div>
+          <div className="grid-item">Javascript</div>
+          <div className="grid-item">React</div>
           <div className="grid-item">Wordpress</div>
           <div className="grid-item">Canva</div>
-          <div className="grid-item">React</div>
         </div>
       </div>
     </section>

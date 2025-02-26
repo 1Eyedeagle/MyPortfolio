@@ -31,7 +31,7 @@ const Projects = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <h4>{project.name}</h4>
-                <p>{project.tech}</p>
+                <p className="text-black ">{project.tech}</p>
               </motion.a>
             ))}
           </div>
