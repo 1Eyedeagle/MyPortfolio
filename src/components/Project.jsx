@@ -3,11 +3,25 @@ import { motion } from "framer-motion";
 import Group from "../images/Group.png";
 
 const projects = [
-  { id: 1, name: "Portfolio", tech: "HTML, CSS", link: "#" },
-  { id: 2, name: "To-Do List", tech: "HTML, CSS, JavaScript", link: "#" },
-  { id: 3, name: "Coinryze", tech: "React", link: "#" },
-  { id: 4, name: "Weather App", tech: "React, API", link: "#" },
-  { id: 5, name: "Portfolio", tech: "React", link: "#" },
+  { id: 1, name: "To-Do List", tech: "HTML, CSS, JavaScript", link: "#" },
+  {
+    id: 2,
+    name: "Coinryze",
+    tech: "React",
+    link: "https://1eyedeagle.github.io/coinRyze/",
+  },
+  {
+    id: 3,
+    name: "Weather App",
+    tech: "React, API",
+    link: "https://1eyedeagle.github.io/weather-app/",
+  },
+  {
+    id: 4,
+    name: "Portfolio",
+    tech: "React",
+    link: "https://1eyedeagle.github.io/MyPortfolio/",
+  },
 ];
 
 const Projects = () => {
