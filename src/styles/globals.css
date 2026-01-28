@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-white antialiased;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animate-typing {
+  width: 15ch;
+  animation:
+    typing 2.5s steps(12),
+    blink 1s step-end infinite;
+}
