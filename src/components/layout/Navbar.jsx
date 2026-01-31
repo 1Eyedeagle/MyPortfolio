@@ -13,7 +13,6 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
   ];
 
-
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -34,7 +33,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto h-16 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="font-heading text-xl text-white tracking-wide">
+          <a href="/" className="font-heading text-xl text-white tracking-wide">
             Ishu Sharma<span className="text-primary">.</span>
           </a>
 
