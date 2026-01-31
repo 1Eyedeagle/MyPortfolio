@@ -11,9 +11,6 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="mb-20"
         >
-          <p className="text-primary uppercase tracking-widest text-sm mb-4">
-            About Me
-          </p>
           <h1 className="font-heading text-4xl md:text-5xl">Know Me Better</h1>
         </motion.div>
 
@@ -93,7 +90,7 @@ export default function About() {
             </h2>
 
             <ul className="space-y-4 text-gray-400">
-              <li>📖 Reading books & articles</li>
+              <li>📖 Reading books </li>
               <li>🎧 Listening to music</li>
               <li>🧠 Solving reasoning & aptitude questions</li>
               <li>🎨 Exploring modern UI/UX designs</li>

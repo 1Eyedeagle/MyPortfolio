@@ -4,42 +4,59 @@ import resume from "../../assets/Ishu_Sharma_Frontend_Developer_Resume.pdf";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-black px-6 pt-32">
-      <motion.div
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
-        className="max-w-5xl text-center"
-      >
-        {/* Animated Line */}
-        <h1 className="font-heading text-4xl md:text-6xl xl:text-7xl leading-tight text-white">
-          <Typewriter
-            words={[
-              "Hello 👋",
-              "I am Ishu Sharma",
-              "Frontend Web Developer",
-              "Crafting modern web experiences",
-            ]}
-            loop={0} // 0 = infinite loop
-            cursor
-            cursorStyle="|"
-            typeSpeed={90}
-            deleteSpeed={50}
-            delaySpeed={1200}
-          />
-        </h1>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-black px-6 pt-32">
+      {/* subtle background glow */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-3xl" />
+      </div>
 
-        {/* Subtext */}
-        <p className="mt-8 text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-          I design and develop responsive, scalable, and visually stunning
-          websites using React, Tailwind CSS, and modern frontend tools.
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative z-10 max-w-5xl text-center"
+      >
+        {/* Intro */}
+        <p className="text-primary uppercase tracking-[0.3em] text-xs md:text-sm mb-6">
+          Frontend Developer
         </p>
 
-        {/* Buttons */}
-        <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
+        {/* Name (static = authority) */}
+        <h1 className="font-heading text-4xl md:text-6xl xl:text-7xl text-white leading-tight">
+          Ishu Sharma
+        </h1>
+
+        {/* Value line (typing – controlled) */}
+        <h2 className="mt-6 text-xl md:text-2xl text-gray-300 min-h-[2.5rem]">
+          <Typewriter
+            words={[
+              "I build modern, scalable web interfaces",
+              "I craft clean and responsive UI",
+              "I turn ideas into polished products",
+            ]}
+            loop={0} // plays once, then stops
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={40}
+            delaySpeed={1400}
+          />
+        </h2>
+
+        {/* Description */}
+        <p className="mt-10 text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+          I specialize in building high-quality frontend applications using
+          React, Tailwind CSS, and modern JavaScript. My focus is on clean code,
+          performance, and user-centric design.
+        </p>
+
+        {/* CTA */}
+        <div className="mt-14 flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="/projects"
-            className="px-8 py-4 bg-primary rounded-xl hover:scale-105 transition"
+            className="px-8 py-4 bg-primary rounded-xl font-medium
+            hover:scale-105 transition"
           >
             View Projects
           </a>

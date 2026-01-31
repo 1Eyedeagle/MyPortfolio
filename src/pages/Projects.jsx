@@ -53,9 +53,6 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="mb-24 text-center"
         >
-          <p className="text-primary uppercase tracking-widest text-sm mb-4">
-            Projects
-          </p>
           <h1 className="font-heading text-4xl md:text-5xl">
             My Development Journey
           </h1>

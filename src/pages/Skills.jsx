@@ -4,31 +4,25 @@ const skillGroups = [
   {
     title: "Frontend Development",
     skills: [
-      { name: "HTML", level: 90 },
-      { name: "CSS", level: 75 },
-      { name: "JavaScript", level: 60 },
-      { name: "React.js", level: 70 },
-      { name: "Tailwind CSS", level: 75 },
-      { name: "Bootstrap", level: 75 },
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Tailwind CSS",
+      "Bootstrap",
     ],
   },
   {
     title: "Tools & Design",
-    skills: [
-      { name: "Git & GitHub", level: 65 },
-      { name: "Figma", level: 70 },
-      { name: "Canva", level: 80 },
-      { name: "WordPress", level: 85 },
-      { name: "Postman", level: 85 },
-    ],
+    skills: ["Git & GitHub", "Figma", "Canva", "WordPress", "Postman"],
   },
   {
     title: "Other Skills",
     skills: [
-      { name: "REST API Integration", level: 65 },
-      { name: "UI / UX Understanding", level: 80 },
-      { name: "Problem Solving", level: 70 },
-      { name: "Debugging", level: 75 },
+      "REST API Integration",
+      "UI / UX Understanding",
+      "Problem Solving",
+      "Debugging",
     ],
   },
 ];
@@ -44,9 +38,6 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
           className="mb-24 text-center"
         >
-          <p className="text-primary uppercase tracking-widest text-sm mb-4">
-            Skills
-          </p>
           <h1 className="font-heading text-4xl md:text-5xl">
             My Technical Skillset
           </h1>
@@ -72,9 +63,9 @@ export default function Skills() {
                 {group.title}
               </h2>
 
-              <div className="space-y-6">
+              <div className="flex flex-wrap gap-3">
                 {group.skills.map((skill) => (
-                  <SkillBar key={skill.name} skill={skill} />
+                  <SkillChip key={skill} label={skill} />
                 ))}
               </div>
             </motion.div>
@@ -89,32 +80,26 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-gray-400 text-center mt-20"
         >
-          * Skill levels represent practical experience and continuous learning.
+          * Skills listed represent hands-on experience and continuous learning.
         </motion.p>
       </div>
     </section>
   );
 }
 
-/* ================= SKILL BAR ================= */
+/* ================= SKILL CHIP ================= */
 
-function SkillBar({ skill }) {
+function SkillChip({ label }) {
   return (
-    <div>
-      <div className="flex justify-between mb-2">
-        <span className="text-gray-300 text-sm">{skill.name}</span>
-        <span className="text-gray-400 text-sm">{skill.level}%</span>
-      </div>
-
-      <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ width: `${skill.level}%` }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="h-full bg-gradient-to-r from-primary to-accent rounded-full"
-        />
-      </div>
-    </div>
+    <motion.span
+      whileHover={{ y: -2 }}
+      className="px-4 py-2 text-sm text-gray-300
+      bg-white/10 border border-white/10
+      rounded-full cursor-default
+      hover:text-white hover:border-primary
+      transition"
+    >
+      {label}
+    </motion.span>
   );
 }

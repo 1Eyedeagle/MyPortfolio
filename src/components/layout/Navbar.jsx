@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,7 +13,7 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
   ];
 
-  // detect scroll
+
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -23,16 +23,16 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full z-50">
+    <header className="fixed top-0 w-full z-50 ">
       {/* NAVBAR */}
       <nav
-        className={`transition-all duration-300 ${
+        className={`transition-all h-16 duration-300 ${
           scrolled
             ? "bg-white/10 backdrop-blur-md border-b border-white/10"
-            : "bg-transparent"
+            : "bg-transparent "
         }`}
       >
-        <div className="max-w-7xl mx-auto  h-16 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto h-16 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="font-heading text-xl text-white tracking-wide">
             Ishu Sharma<span className="text-primary">.</span>
@@ -68,7 +68,7 @@ export default function Navbar() {
           {/* Mobile Button */}
           <button
             onClick={() => setOpen(true)}
-            className="md:hidden flex flex-col gap-1"
+            className="md:hidden flex flex-col gap-1 p-4"
           >
             <span className="w-6 h-[2px] bg-white"></span>
             <span className="w-6 h-[2px] bg-white"></span>
