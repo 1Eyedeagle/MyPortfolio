@@ -8,22 +8,25 @@ const wordpressProjects = [
     link: "https://theindustrialmall.com",
   },
   {
-    title: "Expertz Trust Finfra",
-    tech: "WordPress • UI/UX",
-    desc: "Real estate company website showcasing services, projects, and lead generation with a trust-focused design.",
-    link: "https://expertztrustfinfra.com",
+    title: "Garv Toilets",
+    tech: ["WordPress", "UI/UX", "SEO"],
+    description:
+      "Developed a modern corporate website for GARV Toilets, showcasing innovative IoT-enabled smart sanitation solutions and their global social impact.",
+    link: "https://www.garvtoilets.com/",
   },
   {
-    title: "Expertz Digital Solutions",
-    tech: "WordPress • SEO • UI Design",
-    desc: "Corporate IT services website with modern UI, SEO-friendly structure, and responsive design.",
-    link: "https://expertzdigitalsolution.com",
+    title: "Daksh Engineers",
+    tech: ["WordPress", "Design"],
+    description:
+      "Developed a responsive corporate website for Daksh, delivering a modern, high-performance digital experience with intuitive navigation and user-centric design.",
+    link: "https://daksh.co/",
   },
   {
-    title: "Expertz Fine Dine Restro Cafe",
-    tech: "WordPress • Branding",
-    desc: "Restaurant website with visually rich design, smooth navigation, and strong branding.",
-    link: "https://expertzfinedinerestrocafe.com",
+    title: "Sifra Foundation",
+    tech: ["WordPress", "Branding"],
+    description:
+      "Developed a responsive nonprofit website for Sifra Foundation, showcasing maternal healthcare initiatives, donor engagement, and community impact through a modern digital experience.",
+    link: "https://www.sifrafoundation.com/",
   },
 ];
 
