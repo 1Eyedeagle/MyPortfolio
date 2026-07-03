@@ -10,22 +10,19 @@ const wordpressProjects = [
   {
     title: "Garv Toilets",
     tech: ["WordPress", "UI/UX", "SEO"],
-    description:
-      "Developed a modern corporate website for GARV Toilets, showcasing innovative IoT-enabled smart sanitation solutions and their global social impact.",
+    desc: "Developed a modern corporate website for GARV Toilets, showcasing innovative IoT-enabled smart sanitation solutions and their global social impact.",
     link: "https://www.garvtoilets.com/",
   },
   {
     title: "Daksh Engineers",
     tech: ["WordPress", "Design"],
-    description:
-      "Developed a responsive corporate website for Daksh, delivering a modern, high-performance digital experience with intuitive navigation and user-centric design.",
+    desc: "Developed a responsive corporate website for Daksh, delivering a modern, high-performance digital experience with intuitive navigation and user-centric design.",
     link: "https://daksh.co/",
   },
   {
     title: "Sifra Foundation",
     tech: ["WordPress", "Branding"],
-    description:
-      "Developed a responsive nonprofit website for Sifra Foundation, showcasing maternal healthcare initiatives, donor engagement, and community impact through a modern digital experience.",
+    desc: "Developed a responsive nonprofit website for Sifra Foundation, showcasing maternal healthcare initiatives, donor engagement, and community impact through a modern digital experience.",
     link: "https://www.sifrafoundation.com/",
   },
 ];
