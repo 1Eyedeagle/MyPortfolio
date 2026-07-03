@@ -7,25 +7,25 @@ const projects = [
     link: "https://www.expertzdiginfra.com/",
   },
   {
-    title: "Expertz Digital Solution",
+    title: "Garv Toilets",
     description:
-      "Corporate IT services website with modern UI, responsive design, and performance optimization.",
+      "Developed a modern corporate website for GARV Toilets, showcasing innovative IoT-enabled smart sanitation solutions and their global social impact.",
     tech: ["WordPress", "UI/UX", "SEO"],
-    link: "https://expertzdigitalsolution.com",
+    link: "https://www.garvtoilets.com/",
   },
   {
-    title: "Expertz Trust Finfra",
+    title: "Daksh Engineers",
     description:
-      "Real estate company website showcasing services, projects, and lead generation.",
-    tech: ["WordPress", "Frontend", "Design"],
-    link: "https://expertztrustfinfra.com",
+      "Developed a responsive corporate website for Daksh, delivering a modern, high-performance digital experience with intuitive navigation and user-centric design.",
+    tech: ["WordPress", "Design"],
+    link: "https://daksh.co/",
   },
   {
-    title: "Expertz Finedine Restrocafe",
+    title: "Sifra Foundation",
     description:
-      "Restaurant website with visually rich design and user-friendly layout.",
+      "Developed a responsive nonprofit website for Sifra Foundation, showcasing maternal healthcare initiatives, donor engagement, and community impact through a modern digital experience.",
     tech: ["WordPress", "Branding"],
-    link: "https://expertzfinedinerestrocafe.com",
+    link: "https://www.sifrafoundation.com/",
   },
   {
     title: "The Industrial Mall",
